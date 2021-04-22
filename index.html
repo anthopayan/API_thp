@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang= "fr">
+    <link rel="stylesheet" href="./node_modules/aos/dist/aos.css">
+    <link href="style.css" rel="stylesheet">
+    <head>
+        <title>Mes filmes</title>
+    </head>
+    <body style="background-image: url('fond.jpg')">
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" id="closed" >&times; </a>
+            <a class="title_menu" id="randmenu">Rechercher </a>
+            <hr class="hrside">
+            <input type="search" id="searchuser" name="q" aria-label="Search through site content">
+            <button id="searchbtn">Search</button>
+        </div>
+        <div class="main" id="main">
+            <button class="openbtn" id="open">&#9776; Afficher le Menu</button>
+            <h1 class= "title">Bienvenue !</h1>
+            <div id="pic">
+            </div>         
+        </div>
+        <script src="main.js" ></script>
+        <script src="./node_modules/aos/dist/aos.js"></script>
+        <script>
+            $(document).on('ready', function () {
+              // INITIALIZATION OF AOS
+              // =======================================================
+              AOS.init({
+                duration: 650,
+                once: true
+              });
+            });
+          </script>
+    </body>
+</html>
